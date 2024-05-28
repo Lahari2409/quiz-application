@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>quiz app using html,css,javascript</h1>
+    <div class="quiz-container" id="quiz">
+        <div class="quiz-header">
+            <h2 id="question" >first question</h2>
+            <ul>
+                <li>
+                    <input type="radio"  name="answer" id="a" class="answer">
+                    <label for="a" id="a_text" class="op_label">option1</label>
+                </li>
+                <li>
+                    <input type="radio"  name="answer" id="b" class="answer">
+                    <label for="b" id="b_text" class="op_label">option1</label>
+                </li>
+                <li>
+                    <input type="radio"  name="answer" id="c" class="answer">
+                    <label for="c" id="c_text" class="op_label">option1</label>
+                </li>
+                <li>
+                    <input type="radio"  name="answer" id="d" class="answer">
+                    <label for="d" id="d_text" class="op_label">option1</label>
+                </li>
+            </ul>
+            <div class="actions">
+                <button id="prev">prev</button>
+                <button id="next">next</button>
+                <button id="submit">submit</button>
+                <button id="reload" onclick="location.reload()">reload</button>
+
+            </div>
+        </div>
+        
+
+    </div>
+    <div class="result-container" id="result">
+        <h2 id="score"></h2>
+            <div class="actions">
+                <button onclick="location.reload()">Reload</button>
+                <button id="showAns" onclick="loadAnswers()">show Answers</button>
+            </div>
+        
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
